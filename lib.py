@@ -29,7 +29,7 @@ def inputData() -> None:
     mname = []
     msex = []
     mphone = []
-    with open('member.txt',encoding='utf-8') as memlist:
+    with open('members.txt',encoding='utf-8') as memlist:
         for line in memlist.readlines():
             memberlist = line.split(',')
             mname.append(memberlist[0])
@@ -95,7 +95,7 @@ def UpdateData() -> None:
         mname = []
         msex = []
         mphone = []
-        with open('member.txt',encoding='utf-8') as memlist:
+        with open('members.txt',encoding='utf-8') as memlist:
             for line in memlist.readlines():
                 memberlist = line.split(',')
                 mname.append(memberlist[0])
